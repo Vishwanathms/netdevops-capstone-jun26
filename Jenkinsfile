@@ -1,7 +1,6 @@
 pipeline {
 
-    agent any
-
+    agent { label 'vishwa-network' }
     environment {
 
         NET_USERNAME = credentials('net-user')
