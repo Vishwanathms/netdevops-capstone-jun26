@@ -16,8 +16,8 @@ pipeline {
 
             steps {
 
-                git branch: 'main',
-                url: 'https://github.com/company/network-devops.git'
+                git branch: 'master',
+                url: 'git@github.com:Vishwanathms/netdevops-capstone-jun26.git', credentialId: 'vishwa-github-cred'
             }
         }
 
