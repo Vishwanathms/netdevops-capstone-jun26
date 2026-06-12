@@ -20,23 +20,23 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        // stage('Install Dependencies') {
 
-            steps {
+        //     steps {
 
-                sh '''
+        //         sh '''
 
-                python3 -m venv venv
+        //         python3 -m venv venv
 
-                . venv/bin/activate
+        //         . venv/bin/activate
 
-                pip install --upgrade pip
+        //         pip install --upgrade pip
 
-                pip install -r requirements.txt
+        //         pip install -r requirements.txt
 
-                '''
-            }
-        }
+        //         '''
+        //     }
+        // }
 
         stage('Deploy Configuration - Python') {
 
